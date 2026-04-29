@@ -1,0 +1,27 @@
+// Тестовый скрипт 3.scr
+// Интерактивный тест клавиатуры
+
+CLEAR
+PRINTLN:Keyboard Test
+PRINTLN:============
+PRINTLN:
+PRINTLN:Press keys...
+PRINTLN:A=Send B=Del
+PRINTLN:C=Space D=Exit
+PRINTLN:
+
+SET:running:1
+
+LABEL:loop
+WAITKEY
+SET:key:$lastkey
+
+IF:key=D:THEN:HALT
+
+PRINT:You pressed: 
+GET:key
+PRINTLN:
+
+GOTO:loop
+
+HALT

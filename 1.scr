@@ -1,0 +1,18 @@
+// Тестовый скрипт 1.scr
+// Простой Hello World
+
+PRINTLN:================
+PRINTLN:HELLO WORLD!
+PRINTLN:================
+PRINTLN:
+PRINTLN:Micro OS v1.0
+PRINTLN:ESP32-S3 Ready
+PRINTLN:
+SET:x:10
+MATH:ADD:x:5:3
+PRINTLN:Test math: 5+3=
+GET:x
+PRINTLN:
+PRINTLN:Press any key...
+WAITKEY
+HALT
